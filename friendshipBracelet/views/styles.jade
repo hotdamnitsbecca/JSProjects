@@ -1,0 +1,16 @@
+extends layout
+block content
+
+	h1 Styles
+
+	each style, i in styles
+		div.well
+			.row
+				.col-md-6
+					h3 #{style.name}
+					p #{style.description}
+				.col-md-6
+					p 
+						img(src="#{style.image}" width=200)
+				
+				

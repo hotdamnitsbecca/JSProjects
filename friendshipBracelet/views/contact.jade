@@ -1,0 +1,49 @@
+extends layout
+
+block content
+	form(method='post', action='contact/send')
+		h1 Order Now
+		.form-group
+			label Your Name
+			input.form-control(type='text',name='sender',placeholder='Your Name')
+		.form-group
+			label Your Email
+			input.form-control(type='email',name='email',placeholder='Your Email')
+		.form-group
+			label Friend's Name
+			input.form-control(type='text',name='friend',placeholder='Friend')
+		.form-group
+			label Friend's Address
+			input.form-control(type='text',name='Address1',placeholder='Address 1')
+			input.form-control(type='text',name='Address2',placeholder='Address 2')
+			input.form-control(type='text',name='City',placeholder='City')
+			input.form-control(type='text',name='State',placeholder='State')
+			input.form-control(type='text',name='Zip',placeholder='Zip')
+		.form-group
+			label Styles
+			select.form-control(name='styles')
+				each style, i in styles
+					option(value=i) #{style.name}
+		.form-group
+			label Colors (pick any number)
+			br
+			label.checkbox-inline
+			input(type='checkbox', value='', name='Red')
+			|  Red
+			label.checkbox-inline
+			input(type='checkbox', value='', name='Orange')
+			|  Orange
+			label.checkbox-inline
+			input(type='checkbox', value='', name='Yellow')
+			|  Yellow
+			label.checkbox-inline
+			input(type='checkbox', value='', name='Green')
+			|  Green
+			label.checkbox-inline
+			input(type='checkbox', value='', name='Blue')
+			|  Blue
+			label.checkbox-inline
+			input(type='checkbox', value='', name='Purple')
+			|  Purple
+
+		button.btn.btn-default(type='submit') Place order

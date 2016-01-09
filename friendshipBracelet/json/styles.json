@@ -1,0 +1,22 @@
+[
+	{
+		"name":"Chevron",
+		"description":"Simple chevron pattern",
+		"image":"images/chevron.jpg"
+	},
+	{
+		"name":"Leaves",
+		"description":"Delicate falling leaves",
+		"image":"images/leaves.jpg"
+	},
+	{
+		"name":"Heart",
+		"description":"Cute hearts on repeat",
+		"image":"images/heart.jpg"
+	},
+	{
+		"name":"Diamond",
+		"description":"Cool diamond pattern",
+		"image":"images/diamond.jpg"
+	}
+]
