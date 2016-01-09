@@ -2,6 +2,19 @@ doctype html
 html
   head
     title= title
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='/javascripts/bootstrap.js')
   body
-    block content
+    include ./includes/navbar.jade
+
+    // Main jumbotron for a primary marketing message or call to action
+    include ./includes/showcase.jade
+
+    .container
+      
+      block content
+      hr
+      footer
+        p © 2015 Company, Inc.
+    // /container
