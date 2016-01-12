@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var fs = require('fs');
-var sendgrid = require('sendgrid')('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');
+var sendgrid = require('sendgrid')('');
 
 
 var results;
